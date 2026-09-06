@@ -67,16 +67,15 @@ Cyclone V 5CSEBA6U23I7, Quartus II 13.1 Web Edition.
 ## Contenu
 
 ```
-ip/pwm/
-  pwm_avalon.vhd          le controleur
-  pwm_avalon_hw.tcl       la description pour Platform Designer
-nios_peripherals.vhd      top-level
-nios_peripherals_qsys.qsys
-software/
-  main.c                  application Nios
-doc/
-  rtl_view.png
-  flow_summary.png
+pwm_avalon.vhd              le controleur
+pwm_avalon_hw.tcl           la description pour Platform Designer
+nios_peripherals.vhd        top-level
+nios_peripherals_qsys.qsys  le systeme
+nios_peripherals.qpf        projet Quartus
+nios_peripherals.qsf        affectation des broches
+hello_world_small.c                      application Nios
+rtl_view.png
+flow_summary.png
 ```
 
 ## Reproduire
@@ -86,6 +85,6 @@ doc/
 3. Importer `DE10_Nano_Default.qsf` pour l'affectation des broches
 4. Compiler
 5. Dans Nios II SBT, créer une application depuis `nios_peripherals_qsys.sopcinfo`, template Hello World Small
-6. Remplacer le source par `software/main.c` et construire
+6. Remplacer le source par `main.c` et construire
 
 Les switches pilotent les 7 premières LED en tout ou rien, et la luminosité de la huitième sur 16 niveaux.

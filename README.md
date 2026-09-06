@@ -15,7 +15,7 @@ Tout est relié par l'interconnexion Avalon-MM générée par Platform Designer.
 
 Les sorties exportées sont découpées dans le top-level : `LED[6:0]` viennent du PIO, `LED[7]` vient du PWM.
 
-![RTL view](doc/rtl_view.png)
+![RTL view](rtl_view.png)
 
 | Composant | Base | Taille |
 |---|---|---|
